@@ -1,0 +1,44 @@
+@import 'base';
+
+
+.column {
+    display:    flex;
+    flex-direction: column;
+}
+
+.row {
+    display:    flex;
+    flex-direction: row;
+}
+
+.flex-item {
+    flex-grow: 1;
+}
+
+.row-header {
+    background: $tin-color;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.panel {
+    background: $electric-color;
+    color: #FFFFFF;
+}
+
+.panel-scores {
+    font-size:  25px;
+    color:      #FFFFFF;
+    padding-left: 10px;
+}
+
+.panel-camo {
+    color:  $light-color;
+}
+
+.billboard {
+    background: $forest-color;
+    width: 70%;
+    color: #FFFFFF;
+}
+

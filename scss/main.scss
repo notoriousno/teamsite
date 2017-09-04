@@ -1,0 +1,31 @@
+@import 'base';
+
+
+body {
+    font:   100% $font-stack;
+    color:  $forest-color;
+    background: #FFFFFF;
+}
+
+heading {
+    font-size:  50px;
+    text-align: center;
+    padding:    10px;
+}
+
+subheading {
+    font-size:  20px;
+    padding:    10px;
+}
+
+.foot-note {
+    font-size:  10px;
+    text-align: center;
+}
+
+.news-box {
+    border-top: 2px solid lightgreen;
+    font-size:  20px;
+    padding: 10px;
+}
+

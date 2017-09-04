@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Electric Eel - Homepage</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="/css/main.css">
+  <link rel="stylesheet" type="text/css" href="/css/flexbox.css">
+</head>
+<body>
+  <heading>Electric Eel</heading>
+  <subheading>Recreational Sports Club</subheading>
+
+  <div class="row">
+    <div class="billboard">
+      <img src="/images/referee-back.jpg">
+    </div>
+
+    <div class="flex-item panel">
+      <div class="column row-header">
+        Latest Scores
+      </div>
+
+      {% for _id, team, our_score, their_score in matches %}
+      <div class="column panel-scores">
+        {{ team }}: {{ our_score }} - {{ their_score }}
+      </div>
+      {% endfor %}
+
+      <div class="column panel-scores panel-camo">
+        More Scores...
+      </div>
+
+      <div class="column row-header">
+        Team News
+      </div>
+
+      {% for content in news %}
+      <div class="column news-box">
+        {{ content }}
+      </div>
+      {% endfor %}
+
+      <div class="column news-box panel-camo">
+        More News...
+      </div>
+
+    </div>
+  </div>
+
+  <p class="foot-note">
+    This page is just a simple example page.
+    <br>
+    Content does not reflect any real events, people, or groups.
+    <br>
+    All images, text, and media belong to their respective owners.
+  </p>
+</body>
+</html>
